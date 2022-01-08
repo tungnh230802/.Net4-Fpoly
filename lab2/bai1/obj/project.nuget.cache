@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "omtYrfvu+h0oIbYo2dSYFczmYuCT8csQNKtBqslj5gtqteld06AdHi99rDz1RH4TrlwcnQuCy4OZCxVMnBOfPw==",
+  "dgSpecHash": "q56GFV/j2g7O413dH9OcJ4thl+CZkeLewTr+K7bHzOPjO5JpXLpJuv9E6f8AxERbjalf7zy5TXSd2CSsNxPssg==",
   "success": true,
   "projectFilePath": "C:\\Users\\tungnh230802\\OneDrive\\WorkSpace\\.Net\\c#4\\worklab\\lab2\\bai1\\bai1.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\tungnh230802\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\tungnh230802\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

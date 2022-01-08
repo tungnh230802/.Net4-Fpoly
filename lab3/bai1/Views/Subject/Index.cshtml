@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model lab3.services.SubjectService
+
+<div class="text-center">
+    <h5 style="color: orange;">Công nghệ thông tin</h5>
+    <hr>
+</div>
+<div class="container">
+    <div class="row">
+    @foreach (var subject in Model)
+    {
+            <div class="card col-3" style="">
+                <img src="~/bai1/@subject.Image" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">@subject.Name</p>
+                </div>
+            </div>
+    }
+    </div>
+</div>

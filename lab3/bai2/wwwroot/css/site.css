@@ -1,0 +1,96 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.card {
+  border: none;
+}
+
+.card-text {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.card-body {
+  padding-left: 0;
+  padding-top: 4px;
+}
+
+.card .title {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 24px;
+  color: #333;
+}
+
+.card img {
+  width: 80%;
+  margin-left: 6px;
+}
+
+.card .title-2 {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.price-sale {
+  font-size: 13.5px;
+  color: #999;
+  padding-left: 6px;
+  margin-bottom: 2px;
+  display: inline-block;
+}
+
+.rate {
+  margin-bottom: 10px;
+}
+
+.bi {
+  color: orange;
+  font-size: 12px;
+}
+
+.comment {
+  position: relative;
+  bottom: -2px;
+}
+
+.cauhinh {
+  font-size: 14px;
+  font-weight: 500;
+  color: #999;
+  line-height: 16px;
+  margin-bottom: 4px;
+}
+
+.cauhinh-detail {
+  display: inline-block;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.sale {
+  position: absolute;
+  background: rgb(240, 64, 64);
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  right: 30px;
+  top: -10px;
+}

@@ -34,7 +34,7 @@ namespace Bai3
             {
                 endpoints.MapGet("/", async context =>
                 {
-                    await context.Response.WriteAsync("Hello World!");
+                    await context.Response.WriteAsync(@"<a href='http://localhost:5000/welcome.html'>welcome</a>");
                 });
             });
         }

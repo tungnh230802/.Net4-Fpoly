@@ -15,10 +15,10 @@ C:\Users\tungnh230802\OneDrive\WorkSpace\.Net\c#4\worklab\lab2\Bai3\obj\Debug\ne
 C:\Users\tungnh230802\OneDrive\WorkSpace\.Net\c#4\worklab\lab2\Bai3\obj\Debug\net5.0\Bai3.csproj.CoreCompileInputs.cache
 C:\Users\tungnh230802\OneDrive\WorkSpace\.Net\c#4\worklab\lab2\Bai3\obj\Debug\net5.0\Bai3.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\tungnh230802\OneDrive\WorkSpace\.Net\c#4\worklab\lab2\Bai3\obj\Debug\net5.0\staticwebassets\Bai3.StaticWebAssets.Manifest.cache
-C:\Users\tungnh230802\OneDrive\WorkSpace\.Net\c#4\worklab\lab2\Bai3\obj\Debug\net5.0\staticwebassets\Bai3.StaticWebAssets.xml
 C:\Users\tungnh230802\OneDrive\WorkSpace\.Net\c#4\worklab\lab2\Bai3\obj\Debug\net5.0\scopedcss\bundle\Bai3.styles.css
 C:\Users\tungnh230802\OneDrive\WorkSpace\.Net\c#4\worklab\lab2\Bai3\obj\Debug\net5.0\Bai3.RazorTargetAssemblyInfo.cache
 C:\Users\tungnh230802\OneDrive\WorkSpace\.Net\c#4\worklab\lab2\Bai3\obj\Debug\net5.0\Bai3.dll
 C:\Users\tungnh230802\OneDrive\WorkSpace\.Net\c#4\worklab\lab2\Bai3\obj\Debug\net5.0\ref\Bai3.dll
 C:\Users\tungnh230802\OneDrive\WorkSpace\.Net\c#4\worklab\lab2\Bai3\obj\Debug\net5.0\Bai3.pdb
 C:\Users\tungnh230802\OneDrive\WorkSpace\.Net\c#4\worklab\lab2\Bai3\obj\Debug\net5.0\Bai3.genruntimeconfig.cache
+C:\Users\tungnh230802\OneDrive\WorkSpace\.Net\c#4\worklab\lab2\Bai3\obj\Debug\net5.0\staticwebassets\Bai3.StaticWebAssets.xml

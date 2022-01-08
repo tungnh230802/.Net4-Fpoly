@@ -1,0 +1,26 @@
+@{
+    var emps = ViewBag.employee;
+}
+
+<h4 style="color: #673ab7;">Employee Fpoly Education Data</h4>
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Seria No</th>
+            <th scope="col">Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Phone</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var stu in emps)
+        {
+            <tr>
+                <th scope="row">@stu.Id</th>
+                <td>@stu.Name</td>
+                <td>@stu.Address</td>
+                <td>@stu.Phone</td>
+            </tr>
+        }
+    </tbody>
+</table>

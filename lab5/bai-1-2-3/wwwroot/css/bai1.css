@@ -1,0 +1,43 @@
+header {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(138 43 226);
+}
+
+.header h1 {
+  color: white;
+  font-size: 80px;
+}
+
+.nav {
+  background-color: #03a9f4;
+  width: 100%;
+  height: 465px;
+  /* color: white; */
+}
+
+.nav ul {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.nav ul a {
+    color: white;
+}
+
+.nav ul li {
+  list-style: none;
+}
+
+.main {
+  height: 465px;
+  width: 100%;
+  background-color: #ffc107;
+  padding: 20px;
+}
+
+.main p {
+    text-align: justify;
+}
+
+.footer {width: 100%;background-color: blueviolet;height: 100px;text-align: center;display: flex;justify-content: center;align-items: center;font-size: 36px;color: white;}

@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - bai1</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/bai1.css" />
+</head>
+
+<body>
+
+
+    <div class="container">
+        <header class="header">
+            <h1 class="text-center">Cities</h1>
+        </header>
+        <div class="row no-gutters">
+            <div class="col-3">
+                <nav class="nav">
+                    <ul>
+                        <li><a asp-controller="Home" asp-action="London">london</a></li>
+                        <li><a asp-controller="Home" asp-action="Paris">Paris</a></li>
+                        <li><a asp-controller="Home" asp-action="Tokyo">Tokyo</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-9">
+                <main class="main">
+                    @RenderBody()
+                </main>
+            </div>
+        </div>
+        <footer class="footer">
+            Footer
+        </footer>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

@@ -39,14 +39,25 @@ namespace bai1
             {
                 endpoints.MapGet("/", async context =>
                 {
-                    foreach(var book in _config.GetSection("book").GetChildren().ToList())
+                    await context.Response.WriteAsync($"<div><h1>Bai1A:</h1></div><hr>");
+                    foreach (var book in _config.GetSection("book").GetChildren().ToList())
+                    {
+                        await context.Response.WriteAsync($"<div>id:{_config.GetSection($"book:{book.Key}:id").Value}</div>");
+                        await context.Response.WriteAsync($"<div>language:{_config.GetSection($"book:{book.Key}:language").Value}</div>");
+                        await context.Response.WriteAsync($"<div>edition:{_config.GetSection($"book:{book.Key}:edition").Value}</div>");
+                        await context.Response.WriteAsync($"<div>author:{_config.GetSection($"book:{book.Key}:author").Value}</div><br>");
+                        
+                    }
+
+                    await context.Response.WriteAsync($"<div><h1>Ba1B:</h1></div><hr>");
+                    foreach (var book in _config.GetSection("book").GetChildren().ToList())
                     {
                         if (_config.GetSection($"book:{book.Key}:id").Value == "555")
                         {
-                            await context.Response.WriteAsync($"<div>{_config.GetSection($"book:{book.Key}:id").Value}</div>");
-                            await context.Response.WriteAsync($"<div>{_config.GetSection($"book:{book.Key}:language").Value}</div>");
-                            await context.Response.WriteAsync($"<div>{_config.GetSection($"book:{book.Key}:edition").Value}</div>");
-                            await context.Response.WriteAsync($"<div>{_config.GetSection($"book:{book.Key}:author").Value}</div>");
+                            await context.Response.WriteAsync($"<div>id:{_config.GetSection($"book:{book.Key}:id").Value}</div>");
+                            await context.Response.WriteAsync($"<div>language:{_config.GetSection($"book:{book.Key}:language").Value}</div>");
+                            await context.Response.WriteAsync($"<div>edition:{_config.GetSection($"book:{book.Key}:edition").Value}</div>");
+                            await context.Response.WriteAsync($"<div>author:{_config.GetSection($"book:{book.Key}:author").Value}</div><br>");
                         }
                     }
                 });
