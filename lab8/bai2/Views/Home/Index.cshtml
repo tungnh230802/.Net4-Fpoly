@@ -1,0 +1,17 @@
+﻿@model bai2.Models.User
+@{
+    ViewData["Title"] = "Login";
+}
+<h2 class="text-center">Login</h2>
+<form asp-action="Index">
+    <div class="mb-3">
+        <label asp-for="Email" class="form-label"></label>
+        <input type="email" class="form-control" asp-for="Email" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Passwork" class="form-label"></label>
+        <input type="password" class="form-control" asp-for="Passwork"/> 
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

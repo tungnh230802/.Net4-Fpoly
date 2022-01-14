@@ -1,0 +1,26 @@
+@model ProductService
+
+@{
+}
+
+<h4 style="color: #673ab7;">List Products</h4>
+<table class="table">
+    <thead class="table-dark">
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var pr in Model)
+        {
+            <tr>
+                <th scope="row">@pr.Name</th>
+                <td>@pr.Price</td>
+                <td>@pr.Quantity</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a class="btn btn-primary" style="color: white;" asp-action="Create">Create</a>

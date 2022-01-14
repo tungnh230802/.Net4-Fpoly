@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Products";
+}
+
+@model IEnumerable<Bai2.Models.ProductBai2>
+
+<!-- Begin:Trending Product -->
+<section class="main_Trending">
+    <div class="container">
+        <div class="select_intro">
+            <p>Popular Item in the market</p>
+            <h2>
+                Trending
+                <span class="section-intro_style">Product</span>
+            </h2>
+        </div>
+        <div class="row">
+            @foreach (var product in Model)
+            {
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card trending_card align-items-center">
+                        <div class="card_product-img">
+                            <img src="./img/@product.ImageProduct"
+                                 class="card-img-top"
+                                 alt="@product.ImageProduct" />
+                            <ul class="card_overlay">
+                                <li>
+                                    <button><i class="bi bi-search"></i></button>
+                                </li>
+                                <li>
+                                    <button><i class="bi bi-bag"></i></button>
+                                </li>
+                                <li>
+                                    <button><i class="bi bi-heart"></i></button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body trending_card-body">
+                            <p>@product.Category</p>
+                            <h4><a asp-action="ProductDetail" asp-route-id="@product.Id">@product.ProductName</a></h4>
+                            <p class="card-body-price">$@product.Price</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+<!-- End:Trending Product -->

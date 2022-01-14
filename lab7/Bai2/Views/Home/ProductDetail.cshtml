@@ -1,0 +1,57 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model Bai2.Models.ProductBai2
+@{
+    ViewData["Title"] = Model.ProductName;
+}
+
+<div class="row">
+            <div class="col-lg-6">
+                <img style="height:95%;width:95%;" class="product-img img-fluid" 
+                     src="~/img/@Model.ImageProduct"
+                     />
+            </div>
+            <div class="col-lg-5 offset-lg-1">
+              <div class="product-content">
+                <h3>@Model.ProductName</h3>
+                <h2>$@Model.Price</h2>
+                <ul class="list">
+                  <li>
+                    <a href="#" class="active"
+                      ><span> category </span> : @Model.Category</a
+                    >
+                  </li>
+                  <li>
+                      <a href="#" class="active"><span> Availibility </span> : @Model.Availibility</a>
+                  </li>
+                </ul>
+                <p>
+                    @Model.Descriptions
+                </p>
+                <div class="product_count">
+                  <label for="qty">Quantity:</label>
+                  <input
+                    type="text"
+                    name="qty"
+                    id="stt"
+                    size="2"
+                    maxlength="12"
+                    value="1"
+                    class="input_text"
+                  />
+                  <a href="#" class="button button-banner">Add to Cart</a>
+                  <button class="increase">
+                    <i class="bi bi-arrow-up"></i>
+                  </button>
+                  <button class="decrease">
+                    <i class="bi bi-arrow-down"></i>
+                  </button>
+                </div>
+                <div class="card-area d-flex align-items-center">
+                  <a href="#" class="icon-btn"><i class="bi bi-gem"></i></a>
+                  <a href="#" class="icon-btn"><i class="bi bi-heart"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>

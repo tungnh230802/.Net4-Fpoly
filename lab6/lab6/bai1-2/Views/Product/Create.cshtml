@@ -1,0 +1,18 @@
+@model ProductModel
+
+<form asp-controller="Product" asp-action="Create">
+    <legend>Create</legend>
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Price" class="form-label"></label>
+        <input asp-for="Price" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Quantity" class="form-label"></label>
+        <input asp-for="Quantity" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Add</button>
+</form>
