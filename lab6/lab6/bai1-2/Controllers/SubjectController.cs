@@ -6,7 +6,6 @@ using Microsoft.Extensions.Logging;
 
 namespace lab3.Controllers
 {
-
     public class SubjectController : Controller
     {
         private readonly ILogger<SubjectController> _logger;
@@ -22,7 +21,6 @@ namespace lab3.Controllers
 
             return View(subjects);
         }
-
     }
 }
 
