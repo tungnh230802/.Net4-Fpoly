@@ -21,10 +21,10 @@ namespace Bai2.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            if (!optionsBuilder.IsConfigured)
-            {
-                optionsBuilder.UseSqlServer("");
-            }
+            //if (!optionsBuilder.IsConfigured)
+            //{
+            //    optionsBuilder.UseSqlServer("(localdb)\\MSSQLLocalDB;Initial Catalog=lab7;Integrated Security=True;");
+            //}
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

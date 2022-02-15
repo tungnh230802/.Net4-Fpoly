@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace lab7.Migrations
+namespace Bai1.Migrations
 {
     public partial class init : Migration
     {
@@ -13,11 +13,12 @@ namespace lab7.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
-                    Color = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
-                    UnitPrice = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
-                    AvaiableQuantity = table.Column<int>(type: "int", nullable: true),
-                    CreatedData = table.Column<DateTime>(type: "datetime2", nullable: true)
+                    Name = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
+                    category = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
+                    Color = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
+                    Price = table.Column<int>(type: "int", nullable: true),
+                    AvailableQuantity = table.Column<int>(type: "int", nullable: true),
+                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {

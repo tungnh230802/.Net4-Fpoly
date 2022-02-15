@@ -28,7 +28,8 @@ namespace Bai2
             services.AddControllersWithViews();
             services.AddDbContext<lab7Context>(options =>
             {
-                options.UseSqlServer("Data Source=DESKTOP-2V5F3CA\\TUNGNH230802;Initial Catalog=lab7;Integrated Security=True;");
+                string connectString = Configuration.GetConnectionString("ba7bai2");
+                options.UseSqlServer(connectString);
             });
         }
 
