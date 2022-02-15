@@ -30,9 +30,10 @@ namespace bai2
             {
                 options.IdleTimeout = TimeSpan.FromSeconds(60);
             });
+            string connectString = Configuration.GetConnectionString("Lab8User");
+
             services.AddDbContext<UserContext>(options =>
             {
-                string connectString = @"Data Source=DESKTOP-2V5F3CA\TUNGNH230802;Initial Catalog=lab8;Integrated Security=True;";
                 options.UseSqlServer(connectString);
                 /*
                dotnet ef migrations add createdb

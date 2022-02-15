@@ -14,7 +14,14 @@ namespace bai2.Controllers
         {
             var cart = SessionHelper.GetObjectFromJson<List<Item>>(HttpContext.Session, "cart");
             ViewBag.cart = cart;
-            ViewBag.total = cart.Sum(i => i.Product.Price * i.Quantity);
+            if (cart!=null)
+            {
+                ViewBag.total = cart.Sum(i => i.Product.Price * i.Quantity);
+            }
+            else
+            {
+                ViewBag.total = 0;
+            }
             return View();
         }
         [Route("remove/{id}")]

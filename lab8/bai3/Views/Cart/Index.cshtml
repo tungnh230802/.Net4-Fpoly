@@ -1,7 +1,7 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
-@{ 
+@{
     ViewData["Title"] = "cart";
 }
 
@@ -18,6 +18,8 @@
         </tr>
     </thead>
     <tbody>
+        if(ViewBag.cart!=null)
+        {
         @foreach (var item in ViewBag.cart)
         {
             <tr>
@@ -28,6 +30,7 @@
                 <td>@item.Quantity</td>
                 <td>@(item.Product.Price * item.Quantity)</td>
             </tr>
+        }
         }
         <tr>
             <td class="text-right" colspan="6">Sum</td>

@@ -26,9 +26,15 @@ namespace bai3
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            string connectString = Configuration.GetConnectionString("Lab8User");
+
             services.AddDbContext<ProductContext>(options =>
             {
-                options.UseSqlServer(@"Data Source=DESKTOP-2V5F3CA\TUNGNH230802;Initial Catalog=lab8;Integrated Security=True;");
+                options.UseSqlServer(connectString);
+                /*
+               dotnet ef migrations add createdb
+                dotnet ef database update
+                 */
             });
             services.AddSession(options =>
             {
